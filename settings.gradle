@@ -1,0 +1,8 @@
+include ':PersonalCenter'
+include ':HomePage'
+include ':login'
+include ':BaseMvp'
+include ':Base'
+include ':Service'
+include ':app'
+rootProject.name = "CommentProject"

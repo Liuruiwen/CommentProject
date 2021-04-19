@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.CommentProject" parent="Theme.MaterialComponents.Light" />
+</resources>
