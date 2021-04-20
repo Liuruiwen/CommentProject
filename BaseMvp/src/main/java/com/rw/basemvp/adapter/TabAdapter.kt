@@ -1,9 +1,11 @@
 package com.rw.basemvp.adapter
 
+import android.annotation.SuppressLint
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.PagerAdapter
 
 /**
@@ -11,7 +13,8 @@ import androidx.viewpager.widget.PagerAdapter
  * Date:2020/2/11.
  * Desc:
  */
-class TabAdapter constructor (fm: FragmentManager,var list:List<Fragment>) : FragmentPagerAdapter(fm) {
+@SuppressLint("WrongConstant")
+class TabAdapter constructor (fm: FragmentManager, var list:List<Fragment>) : FragmentStatePagerAdapter(fm,FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
     private var position: Int = 0
 
 
